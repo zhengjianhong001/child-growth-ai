@@ -1,0 +1,50 @@
+<view class="container">
+  <view class="header">
+    <view class="welcome">
+      <text class="title">欢迎使用AI儿童生长发育分析</text>
+      <text class="subtitle">科学分析，智能建议</text>
+    </view>
+    
+    <view class="user-info" wx:if="{{!hasUserInfo}}">
+      <button 
+        class="primary-button" 
+        wx:if="{{canIUseGetUserProfile}}" 
+        bindtap="getUserProfile"
+      >
+        登录使用
+      </button>
+    </view>
+  </view>
+
+  <view class="content">
+    <view class="card">
+      <view class="card-title">快速开始</view>
+      <view class="card-content">
+        <button class="secondary-button" bindtap="navigateToAnalysis">开始分析</button>
+      </view>
+    </view>
+
+    <view class="features">
+      <view class="feature-item">
+        <image class="feature-icon" src="/assets/icons/growth.png" />
+        <text class="feature-title">生长曲线</text>
+        <text class="feature-desc">科学跟踪生长发育</text>
+      </view>
+      <view class="feature-item">
+        <image class="feature-icon" src="/assets/icons/ai.png" />
+        <text class="feature-title">AI分析</text>
+        <text class="feature-desc">智能评估发育状况</text>
+      </view>
+      <view class="feature-item">
+        <image class="feature-icon" src="/assets/icons/report.png" />
+        <text class="feature-title">分析报告</text>
+        <text class="feature-desc">专业的分析建议</text>
+      </view>
+      <view class="feature-item">
+        <image class="feature-icon" src="/assets/icons/guide.png" />
+        <text class="feature-title">育儿指南</text>
+        <text class="feature-desc">科学的育儿知识</text>
+      </view>
+    </view>
+  </view>
+</view> 

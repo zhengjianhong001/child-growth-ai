@@ -1,0 +1,22 @@
+{
+  "name": "child-growth-ai",
+  "version": "1.0.0",
+  "description": "AI儿童生长发育分析小程序",
+  "scripts": {
+    "dev": "miniprogram-ci preview --pp ./src --pkp ./private.key",
+    "build": "miniprogram-ci upload --pp ./src --pkp ./private.key",
+    "test": "jest"
+  },
+  "dependencies": {
+    "mobx-miniprogram": "^4.13.2",
+    "mobx-miniprogram-bindings": "^2.1.5",
+    "weui-miniprogram": "^1.2.7"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/wechat-miniprogram": "^3.4.7",
+    "jest": "^29.7.0",
+    "miniprogram-ci": "^1.9.8",
+    "typescript": "^5.4.2"
+  }
+} 
